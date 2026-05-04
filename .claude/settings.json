@@ -21,7 +21,11 @@
       "Bash(pnpm build *)",
       "Bash(curl -fs http://localhost:5189/ -o /tmp/learnkids-index.html)",
       "Bash(rtk curl *)",
-      "Bash(pkill -f 'vite.*5189')"
+      "Bash(pkill -f 'vite.*5189')",
+      "Bash(sips --help)"
+    ],
+    "additionalDirectories": [
+      "/Users/jbwittner/workspace/learnkids/images"
     ]
   }
 }
