@@ -1,85 +1,70 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+import type { Classe } from '@/theme'
+import ClassSelect from '@/views/ClassSelect.vue'
+import SubjectHub, { type ExerciseId } from '@/views/SubjectHub.vue'
+import MathConfig, { type MathSettings } from '@/views/MathConfig.vue'
+import MathModule from '@/views/MathModule.vue'
+import FractionModule from '@/views/FractionModule.vue'
+import FrenchModule from '@/views/FrenchModule.vue'
+
+type Screen = 'class' | 'subjects' | 'exercise'
+type MathPhase = 'config' | 'game'
+
+const screen = ref<Screen>('class')
+const classe = ref<Classe | null>(null)
+const subject = ref<ExerciseId | null>(null)
+const mathSettings = ref<MathSettings | null>(null)
+const mathPhase = ref<MathPhase>('config')
+
+const goClass = () => {
+  screen.value = 'class'
+  classe.value = null
+  subject.value = null
+}
+const goSubjects = (cls: Classe) => {
+  classe.value = cls
+  screen.value = 'subjects'
+}
+const goExercise = (sub: ExerciseId) => {
+  subject.value = sub
+  if (sub === 'math_ops') mathPhase.value = 'config'
+  screen.value = 'exercise'
+}
+const goBack = () => {
+  screen.value = 'subjects'
+}
+
+const onMathStart = (s: MathSettings) => {
+  mathSettings.value = s
+  mathPhase.value = 'game'
+}
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <ClassSelect v-if="screen === 'class'" @select="goSubjects" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <SubjectHub
+    v-else-if="screen === 'subjects' && classe"
+    :classe="classe"
+    @select="goExercise"
+    @back="goClass"
+  />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <template v-else-if="screen === 'exercise'">
+    <template v-if="subject === 'math_ops'">
+      <MathConfig v-if="mathPhase === 'config'" @start="onMathStart" @back="goBack" />
+      <MathModule
+        v-else-if="mathSettings"
+        :math-settings="mathSettings"
+        @back="goBack"
+      />
+    </template>
+    <FractionModule v-else-if="subject === 'math_frac'" @back="goBack" />
+    <FrenchModule
+      v-else-if="subject === 'french' && classe"
+      :classe="classe"
+      @back="goBack"
+    />
+  </template>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-</style>

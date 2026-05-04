@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(mkdir -p /tmp/design-extract)",
+      "Read(//private/tmp/design-extract/**)",
+      "Bash(tar -xzf /Users/jbwittner/.claude/projects/-Users-jbwittner-workspace-learnkids/0a66eee4-18db-443f-bd56-db3941e04bce/tool-results/webfetch-1777916421146-eyt9r6.bin)",
+      "Bash(/bin/ls -la /tmp/design-extract/)",
+      "Bash(/bin/ls -la /Users/jbwittner/workspace/learnkids/)",
+      "Bash(/bin/ls -la /tmp/design-extract/learnkid/)",
+      "Read(//tmp/design-extract/learnkid/**)",
+      "Read(//private/tmp/design-extract/learnkid/**)",
+      "Bash(/bin/ls -laR /tmp/design-extract/learnkid/project/ /tmp/design-extract/learnkid/chats/)",
+      "Bash(/bin/ls -la /Users/jbwittner/workspace/learnkids/src/)",
+      "Bash(/bin/ls -la /Users/jbwittner/workspace/learnkids/src/components /Users/jbwittner/workspace/learnkids/src/views /Users/jbwittner/workspace/learnkids/src/router /Users/jbwittner/workspace/learnkids/src/assets)",
+      "Bash(rtk wc *)",
+      "Bash(cp /tmp/design-extract/learnkid/project/words.json /Users/jbwittner/workspace/learnkids/src/data/words.json)",
+      "Bash(/bin/ls /Users/jbwittner/workspace/learnkids/src/data/)",
+      "Bash(/bin/ls -laR /Users/jbwittner/workspace/learnkids/src/)",
+      "Bash(pnpm type-check *)",
+      "Bash(pnpm build *)",
+      "Bash(curl -fs http://localhost:5189/ -o /tmp/learnkids-index.html)",
+      "Bash(rtk curl *)",
+      "Bash(pkill -f 'vite.*5189')"
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "CP": {
+    "listes": [
+      {
+        "id": "cp_sons_simples",
+        "name": "Sons simples",
+        "words": ["un", "ma", "le", "tu", "il", "eau", "dos", "rue", "feu", "nez", "bol", "ami", "lit", "roi", "loup"]
+      },
+      {
+        "id": "cp_corps",
+        "name": "Le corps",
+        "words": ["bras", "main", "pied", "nez", "dos", "tete", "oeil", "oreille", "bouche", "ventre"]
+      },
+      {
+        "id": "cp_animaux",
+        "name": "Les animaux",
+        "words": ["chat", "chien", "lapin", "vache", "poule", "canard", "mouton", "cheval", "cochon", "oiseau"]
+      },
+      {
+        "id": "cp_couleurs",
+        "name": "Les couleurs",
+        "words": ["rouge", "bleu", "vert", "jaune", "noir", "blanc", "rose", "gris", "violet", "orange"]
+      }
+    ]
+  },
+  "CE1": {
+    "listes": [
+      {
+        "id": "ce1_famille",
+        "name": "La famille",
+        "words": ["papa", "maman", "frere", "soeur", "oncle", "tante", "cousin", "grands-parents", "bebe", "famille"]
+      },
+      {
+        "id": "ce1_maison",
+        "name": "La maison",
+        "words": ["porte", "fenetre", "cuisine", "chambre", "jardin", "escalier", "toit", "mur", "salon", "couloir"]
+      },
+      {
+        "id": "ce1_ecole",
+        "name": "L'école",
+        "words": ["cahier", "crayon", "gomme", "regle", "livre", "cartable", "tableau", "maitre", "classe", "recreation"]
+      },
+      {
+        "id": "ce1_verbes",
+        "name": "Verbes du quotidien",
+        "words": ["manger", "boire", "dormir", "jouer", "courir", "chanter", "dessiner", "lire", "ecrire", "sauter"]
+      },
+      {
+        "id": "ce1_fruits",
+        "name": "Fruits et légumes",
+        "words": ["pomme", "poire", "banane", "cerise", "fraise", "tomate", "carotte", "salade", "haricot", "courgette"]
+      }
+    ]
+  },
+  "CE2": {
+    "listes": [
+      {
+        "id": "ce2_nature",
+        "name": "La nature",
+        "words": ["arbre", "fleur", "feuille", "racine", "branche", "foret", "riviere", "montagne", "nuage", "soleil"]
+      },
+      {
+        "id": "ce2_metiers",
+        "name": "Les métiers",
+        "words": ["medecin", "pompier", "boulanger", "facteur", "policier", "acteur", "peintre", "pilote", "cuisinier", "jardinier"]
+      },
+      {
+        "id": "ce2_sports",
+        "name": "Les sports",
+        "words": ["football", "natation", "cyclisme", "tennis", "basketball", "gymnastique", "judo", "volley", "athletisme", "ski"]
+      },
+      {
+        "id": "ce2_adjectifs",
+        "name": "Adjectifs courants",
+        "words": ["grand", "petit", "beau", "laid", "fort", "faible", "rapide", "lent", "chaud", "froid"]
+      },
+      {
+        "id": "ce2_sons_complexes",
+        "name": "Sons complexes",
+        "words": ["chapeau", "tableau", "gateau", "bateau", "manteau", "oiseau", "cerveau", "noyau", "rideau", "ciseau"]
+      }
+    ]
+  },
+  "CM1": {
+    "listes": [
+      {
+        "id": "cm1_geographie",
+        "name": "Géographie",
+        "words": ["continent", "ocean", "capitale", "frontiere", "territoire", "population", "longitude", "latitude", "equateur", "meridien"]
+      },
+      {
+        "id": "cm1_histoire",
+        "name": "Histoire",
+        "words": ["revolution", "republique", "monarchie", "empire", "guerrier", "chevalier", "chateau", "aristocrate", "peuple", "liberte"]
+      },
+      {
+        "id": "cm1_sciences",
+        "name": "Sciences",
+        "words": ["experience", "molecule", "matiere", "energie", "gravite", "oxygene", "carbone", "lumiere", "temperature", "pression"]
+      },
+      {
+        "id": "cm1_mots_difficiles",
+        "name": "Mots difficiles",
+        "words": ["chrysantheme", "pharmacie", "rythme", "symphonie", "sculpture", "mystere", "physique", "gymnase", "orthographe", "vocabulaire"]
+      },
+      {
+        "id": "cm1_homophones",
+        "name": "Homophones",
+        "words": ["mer", "mere", "maire", "ver", "verre", "vert", "vers", "son", "sont", "sang"]
+      }
+    ]
+  },
+  "CM2": {
+    "listes": [
+      {
+        "id": "cm2_citoyennete",
+        "name": "Citoyenneté",
+        "words": ["democratie", "constitution", "suffrage", "citoyen", "liberte", "egalite", "fraternite", "solidarite", "tolerance", "responsabilite"]
+      },
+      {
+        "id": "cm2_litterature",
+        "name": "Littérature",
+        "words": ["personnage", "narrateur", "intrigue", "dialogue", "description", "metaphore", "comparaison", "hyperbole", "fable", "conte"]
+      },
+      {
+        "id": "cm2_grammaire",
+        "name": "Grammaire avancée",
+        "words": ["subjonctif", "conditionnel", "participe", "complement", "attribut", "apposition", "conjonction", "preposition", "determinant", "pronom"]
+      },
+      {
+        "id": "cm2_mots_savants",
+        "name": "Mots savants",
+        "words": ["adolescent", "environnement", "developpement", "appartement", "gouvernement", "evenement", "investissement", "enseignement", "abonnement", "renseignement"]
+      },
+      {
+        "id": "cm2_prefixes",
+        "name": "Préfixes et suffixes",
+        "words": ["incomplet", "illisible", "irresponsable", "desordre", "prehistoric", "antibiotique", "superheros", "microbiome", "telescope", "biologie"]
+      }
+    ]
+  }
+}
