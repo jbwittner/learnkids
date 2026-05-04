@@ -8,6 +8,12 @@ import MathModule from '@/views/MathModule.vue'
 import FractionModule from '@/views/FractionModule.vue'
 import FrenchModule from '@/views/FrenchModule.vue'
 
+const buildSha = __BUILD_SHA__
+const buildDate = new Date(__BUILD_DATE__).toLocaleString('fr-FR', {
+  dateStyle: 'short',
+  timeStyle: 'short',
+})
+
 type Screen = 'class' | 'subjects' | 'exercise'
 type MathPhase = 'config' | 'game'
 
@@ -67,4 +73,19 @@ const onMathStart = (s: MathSettings) => {
       @back="goBack"
     />
   </template>
+
+  <footer class="build-info">build {{ buildDate }} · {{ buildSha }}</footer>
 </template>
+
+<style scoped>
+.build-info {
+  position: fixed;
+  bottom: 4px;
+  right: 8px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  pointer-events: none;
+  z-index: 1;
+}
+</style>
