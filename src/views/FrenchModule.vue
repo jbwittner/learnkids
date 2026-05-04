@@ -77,6 +77,17 @@ const markCorrection = (i: number, result: 'correct' | 'wrong') => {
 }
 
 const presetSizes = (max: number) => [5, 10, 15, 20].filter((n) => n <= max)
+
+const currentWord = computed(() => activeWords.value[wordIndex.value] ?? '')
+const wordFontSize = computed(() => {
+  const len = currentWord.value.length
+  if (len <= 8) return 'clamp(2.5rem, 8vw, 5rem)'
+  if (len <= 11) return 'clamp(1.8rem, 6vw, 3.5rem)'
+  if (len <= 14) return 'clamp(1.3rem, 4.5vw, 2.5rem)'
+  if (len <= 18) return 'clamp(1rem, 3.5vw, 2rem)'
+  if (len <= 22) return 'clamp(0.85rem, 3vw, 1.6rem)'
+  return 'clamp(0.7rem, 2.5vw, 1.3rem)'
+})
 </script>
 
 <template>
@@ -448,10 +459,11 @@ const presetSizes = (max: number) => [5, 10, 15, 20].filter((n) => n <= max)
           background: T.card,
           borderRadius: T.radius,
           boxShadow: T.shadow,
-          padding: '3rem 4rem',
+          padding: 'clamp(1.5rem, 4vw, 3rem) clamp(1.2rem, 5vw, 4rem)',
           textAlign: 'center',
           width: '100%',
           maxWidth: '500px',
+          boxSizing: 'border-box',
         }"
       >
         <div
@@ -468,12 +480,13 @@ const presetSizes = (max: number) => [5, 10, 15, 20].filter((n) => n <= max)
         </div>
         <div
           :style="{
-            fontSize: 'clamp(2.5rem, 8vw, 5rem)',
+            fontSize: wordFontSize,
             fontWeight: 900,
             color: T.frColor,
             letterSpacing: '0.05em',
             lineHeight: 1.1,
-            transition: 'opacity 0.2s',
+            transition: 'opacity 0.2s, font-size 0.2s',
+            whiteSpace: 'nowrap',
           }"
         >
           {{ showWord ? activeWords[wordIndex] : '••••••' }}

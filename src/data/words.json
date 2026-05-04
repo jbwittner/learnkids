@@ -1,56 +1,153 @@
 {
-  "CP": {
-    "listes": [
-      {
-        "id": "cp_sons_simples",
-        "name": "Sons simples",
-        "words": ["un", "ma", "le", "tu", "il", "eau", "dos", "rue", "feu", "nez", "bol", "ami", "lit", "roi", "loup"]
-      },
-      {
-        "id": "cp_corps",
-        "name": "Le corps",
-        "words": ["bras", "main", "pied", "nez", "dos", "tete", "oeil", "oreille", "bouche", "ventre"]
-      },
-      {
-        "id": "cp_animaux",
-        "name": "Les animaux",
-        "words": ["chat", "chien", "lapin", "vache", "poule", "canard", "mouton", "cheval", "cochon", "oiseau"]
-      },
-      {
-        "id": "cp_couleurs",
-        "name": "Les couleurs",
-        "words": ["rouge", "bleu", "vert", "jaune", "noir", "blanc", "rose", "gris", "violet", "orange"]
-      }
-    ]
-  },
   "CE1": {
-    "listes": [
-      {
-        "id": "ce1_famille",
-        "name": "La famille",
-        "words": ["papa", "maman", "frere", "soeur", "oncle", "tante", "cousin", "grands-parents", "bebe", "famille"]
-      },
-      {
-        "id": "ce1_maison",
-        "name": "La maison",
-        "words": ["porte", "fenetre", "cuisine", "chambre", "jardin", "escalier", "toit", "mur", "salon", "couloir"]
-      },
-      {
-        "id": "ce1_ecole",
-        "name": "L'école",
-        "words": ["cahier", "crayon", "gomme", "regle", "livre", "cartable", "tableau", "maitre", "classe", "recreation"]
-      },
-      {
-        "id": "ce1_verbes",
-        "name": "Verbes du quotidien",
-        "words": ["manger", "boire", "dormir", "jouer", "courir", "chanter", "dessiner", "lire", "ecrire", "sauter"]
-      },
-      {
-        "id": "ce1_fruits",
-        "name": "Fruits et légumes",
-        "words": ["pomme", "poire", "banane", "cerise", "fraise", "tomate", "carotte", "salade", "haricot", "courgette"]
-      }
-    ]
+    "listes":
+[
+  {
+    "id": "ce1_dictee_1",
+    "name": "Dictée n°1",
+    "words": ["Adèle", "Léo", "la dictée", "l'école", "un stylo", "la tête", "arriver", "se préparer", "prêter", "se creuser", "pour", "et"]
+  },
+  {
+    "id": "ce1_dictee_2",
+    "name": "Dictée n°2",
+    "words": ["Olivia", "son vélo", "la forêt", "cette fille", "vert", "préféré", "violet", "avancer", "voilà", "vite", "dans", "avec"]
+  },
+  {
+    "id": "ce1_dictee_3",
+    "name": "Dictée n°3",
+    "words": ["un dindon", "une tortue", "la patte", "timide", "drôle", "triste", "têtue", "dodu", "tordue", "rentrer", "tard"]
+  },
+  {
+    "id": "ce1_dictee_4",
+    "name": "Dictée n°4",
+    "words": ["une banane", "une prune", "la poule", "une poire", "un bol", "du pain", "belle", "petite", "blanche", "bleu", "picorer"]
+  },
+  {
+    "id": "ce1_dictee_5",
+    "name": "Dictée n°5",
+    "words": ["vendredi", "Nathan", "une orange", "un champignon", "un panier", "un moment", "grand", "récolter", "ramasser", "ranger", "pendant"]
+  },
+  {
+    "id": "ce1_dictee_6",
+    "name": "Dictée n°6",
+    "words": ["le camion", "un bonbon", "de la confiture", "Léon", "un lion", "un mouton", "marron", "rond", "long", "transporter", "avaler", "tout"]
+  },
+  {
+    "id": "ce1_dictee_7",
+    "name": "Dictée n°7",
+    "words": ["Paul", "l'automne", "l'hiver", "le vent", "un chapeau", "l'eau", "beau", "s'envoler", "plus", "mais", "beaucoup", "dehors"]
+  },
+  {
+    "id": "ce1_dictee_8",
+    "name": "Dictée n°8",
+    "words": ["la maison", "le mimosa", "une rose", "une chemise", "ma voisine", "un vase", "un zèbre", "le zoo", "grise", "porter", "poser", "voir", "puis"]
+  },
+  {
+    "id": "ce1_dictee_9",
+    "name": "Dictée n°9",
+    "words": ["mon cousin", "le dessert", "un escargot", "du poisson", "le cassis", "les coussins", "sauvage", "cuisiner", "préparer", "savourer", "s'installer", "sur"]
+  },
+  {
+    "id": "ce1_dictee_10",
+    "name": "Dictée n°10",
+    "words": ["un dauphin", "une toile", "un lapin", "un daim", "lundi", "un chien", "Quentin", "malin", "brun", "peindre", "soudain"]
+  },
+  {
+    "id": "ce1_dictee_11",
+    "name": "Dictée n°11",
+    "words": ["un géant", "la gymnastique", "le jardin", "un gigot", "un pigeon", "du jambon", "une orangeade", "gentil", "manger", "boire", "ensuite", "aussi"]
+  },
+  {
+    "id": "ce1_dictee_12",
+    "name": "Dictée n°12",
+    "words": ["Guillem", "un garçon", "une gaufre", "un gâteau", "une glace", "Gabin", "la guitare", "gourmand", "grosse", "déguster", "jouer", "très", "que"]
+  },
+  {
+    "id": "ce1_dictee_13",
+    "name": "Dictée n°13",
+    "words": ["mon chat", "le lait", "la table", "un bond", "mon lit", "la nuit", "le drap", "interdit", "blanc", "sauter", "boire", "se coucher", "salir", "souvent", "parce que"]
+  },
+  {
+    "id": "ce1_dictee_14",
+    "name": "Dictée n°14",
+    "words": ["Marcel", "sa leçon", "son père", "son garçon", "la chance", "le cinéma", "le cirque", "difficile", "réciter", "se tromper", "féliciter", "voici", "sans"]
+  },
+  {
+    "id": "ce1_dictee_15",
+    "name": "Dictée n°15",
+    "words": ["un accord", "le concert", "un kilomètre", "la musique", "l'orchestre", "le silence", "dernier", "commencer", "écouter", "arriver", "parcourir", "réviser", "encore"]
+  },
+  {
+    "id": "ce1_dictee_16",
+    "name": "Dictée n°16",
+    "words": ["cette semaine", "la reine", "la peine", "la neige", "la maitresse", "la luge", "un élève", "aimer", "aider", "faire", "tomber", "fondre", "il y a"]
+  },
+  {
+    "id": "ce1_dictee_17",
+    "name": "Dictée n°17",
+    "words": ["février", "un citron", "avril", "une fraise", "Clara", "le fleuriste", "la classe", "gros", "trouver", "observer", "penser", "acheter", "en", "pas", "plusieurs", "qui", "chez"]
+  },
+  {
+    "id": "ce1_dictee_18",
+    "name": "Dictée n°18",
+    "words": ["l'aquarium", "l'avion", "la mer", "le coin", "le grillage", "l'attention", "mon voisin", "lointain", "pointu", "violet", "amener", "visiter", "parfois"]
+  },
+  {
+    "id": "ce1_dictee_19",
+    "name": "Dictée n°19",
+    "words": ["des sciences", "une opération", "une addition", "une soustraction", "la récréation", "un dessin", "le martien", "une acrobatie", "six", "animé", "regarder", "après"]
+  },
+  {
+    "id": "ce1_dictee_20",
+    "name": "Dictée n°20",
+    "words": ["Oriane", "la campagne", "une châtaigne", "une égratignure", "le genou", "une araignée", "le poignet", "mignon", "saigner", "soigner", "se poser"]
+  },
+  {
+    "id": "ce1_dictee_21",
+    "name": "Dictée n°21",
+    "words": ["un crayon", "une voyelle", "le paysage", "le soleil", "la vanille", "la bille", "le papillon", "la jonquille", "joli", "donner", "recopier", "dessiner", "près"]
+  },
+  {
+    "id": "ce1_dictee_22",
+    "name": "Dictée n°22",
+    "words": ["le gouter", "Noé", "un pied", "le café", "la matinée", "la liberté", "le début", "animé", "délicieux", "se promener", "décider", "aller", "comme", "assez", "depuis"]
+  },
+  {
+    "id": "ce1_dictee_23",
+    "name": "Dictée n°23",
+    "words": ["Alexy", "le saxophone", "le jour", "un musicien", "l'exercice", "l'examen", "l'exemple", "extraordinaire", "deuxième", "longue", "s'exercer", "répéter", "devenir", "mieux"]
+  },
+  {
+    "id": "ce1_dictee_24",
+    "name": "Dictée n°24",
+    "words": ["mercredi", "ma sœur", "le feu", "la cheminée", "une fleur", "un renard", "un cœur", "la flamme", "heureuse", "allumer", "dessiner", "danser", "joyeusement"]
+  },
+  {
+    "id": "ce1_dictee_25",
+    "name": "Dictée n°25",
+    "words": ["un écureuil", "l'arbre", "un oreiller", "une feuille", "la maison", "son frère", "un épouvantail", "le chandail", "une grenouille", "vieux", "repérer", "grimper", "se reposer"]
+  },
+  {
+    "id": "ce1_dictee_26",
+    "name": "Dictée n°26",
+    "words": ["ma cousine", "ma chatte", "ma chienne", "mon amie", "ma femme", "ma tante", "une cavalière", "une jument", "content", "flâner", "passer", "aujourd'hui", "également", "autour", "là"]
+  },
+  {
+    "id": "ce1_dictee_27",
+    "name": "Dictée n°27",
+    "words": ["une élève", "une directrice", "la cuisinière", "la boulangère", "la pâtissière", "une reine", "une coiffeuse", "une princesse", "le rêve", "sérieuse", "impossible", "alors", "peut-être"]
+  },
+  {
+    "id": "ce1_dictee_28",
+    "name": "Dictée n°28",
+    "words": ["ici", "là", "moins", "bientôt", "rien", "personne", "partout", "comment", "demain", "devant", "enfin", "par", "quoi", "pourquoi"]
+  },
+  {
+    "id": "ce1_dictee_29",
+    "name": "Dictée n°29",
+    "words": ["hier", "jamais", "jusque", "quand", "autant", "avant", "maintenant", "sous", "trop", "comme", "derrière", "entre", "déjà", "contre"]
+  }
+]
   },
   "CE2": {
     "listes": [
